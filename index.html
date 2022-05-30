@@ -3,12 +3,12 @@
 </head>
 <body>
 
-  <div>New Sportsbook Proposal Risk Assesment</div>
+  <div><h1>New Sportsbook Proposal Risk Assesment</h1></div>
   
   <div id='q1'>
     Is this change/introduction to DEV only?
     <input type='button' value='YES' />
-    <input type='button' value='NO' />
+    <input type='button' value='NO' onclick="document.getElementById('q2').style.display='block';document.getElementById('q1').style.display='none'"/>
   </div>
   
   <div id='q2' style="display:none;">
@@ -36,7 +36,7 @@
 
 
 
-
+  <div id='counter'>0</div>
 
 </body>
 </html>
