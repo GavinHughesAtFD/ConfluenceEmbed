@@ -1,35 +1,42 @@
 <html>
 <head>
+  <script>
+    function ender(){
+      document.getElementById('end').innerHTML = document.getElementById('end').innerHTML.replace("[here],"+document.getElementById('counter').innerHTML+"");
+    }
+  </script>
 </head>
 <body>
 
   <div id='q1'>
     Is this change/introduction to DEV only?
-    <input type='button' value='YES' onclick="document.getElementById('q1').style.display='none';document.getElementById('end').style.display='block';" />
+    <input type='button' value='YES' onclick="document.getElementById('q1').style.display='none';document.getElementById('end').style.display='block';ender()" />
     <input type='button' value='NO' onclick="document.getElementById('q2').style.display='block';document.getElementById('q1').style.display='none';document.getElementById('counter').innerHTML=(document.getElementById('counter').innerHTML*1)+1;"/>
   </div>
   
   <div id='q2' style="display:none;">
     Dependancies?
     <input type='button' value='YES'  onclick="document.getElementById('q2').style.display='none';document.getElementById('q3').style.display='block';document.getElementById('counter').innerHTML=(document.getElementById('counter').innerHTML*1)+1;"/>
-    <input type='button' value='NO' onclick="document.getElementById('q2').style.display='none';document.getElementById('end').style.display='block';"/>  
+    <input type='button' value='NO' onclick="document.getElementById('q2').style.display='none';document.getElementById('end').style.display='block';ender()"/>  
   </div>
 
   <div id='q3' style="display:none;">
     External Resource Input?
     <input type='button' value='YES'   onclick="document.getElementById('q3').style.display='none';document.getElementById('q4').style.display='block';document.getElementById('counter').innerHTML=(document.getElementById('counter').innerHTML*1)+1;"/>
-    <input type='button' value='NO' onclick="document.getElementById('q3').style.display='none';document.getElementById('end').style.display='block';" />
+    <input type='button' value='NO' onclick="document.getElementById('q3').style.display='none';document.getElementById('end').style.display='block';ender()" />
   </div>  
 
   <div id='q4' style="display:none;" >
     Scope
-    <input type='button' value='All Users'   onclick="document.getElementById('q4').style.display='none';document.getElementById('q4').style.display='block';document.getElementById('counter').innerHTML=(document.getElementById('counter').innerHTML*1)+1;"/>
-    <input type='button' value='Staff Only' onclick="document.getElementById('q4').style.display='none';document.getElementById('end').style.display='block';" />
+    <input type='button' value='All Users'   onclick="document.getElementById('q4').style.display='none';document.getElementById('q5').style.display='block';document.getElementById('counter').innerHTML=(document.getElementById('counter').innerHTML*1)+1;"/>
+    <input type='button' value='Staff Only' onclick="document.getElementById('q4').style.display='none';document.getElementById('end').style.display='block';ender()" />
  
   </div>  
 
   <div id='q5' style="display:none;">
-
+    Security / Legislative Consideration?
+    <input type='button' value='Yes'   onclick="document.getElementById('q5').style.display='none';document.getElementById('end').style.display='block';document.getElementById('counter').innerHTML=(document.getElementById('counter').innerHTML*1)+1;"/>
+    <input type='button' value='No' onclick="document.getElementById('q5').style.display='none';document.getElementById('end').style.display='block';ender()" />
   </div>
 
 
