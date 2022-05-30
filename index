@@ -1,0 +1,42 @@
+<html>
+<head>
+</head>
+<body>
+
+  <div>New Sportsbook Proposal Risk Assesment</div>
+  
+  <div id='q1'>
+    Is this change/introduction to DEV only?
+    <input type='button' value='YES' />
+    <input type='button' value='NO' />
+  </div>
+  
+  <div id='q2' style="display:none;">
+    Dependancies?
+    <input type='button' value='YES' />
+    <input type='button' value='NO' />  
+  </div>
+
+  <div id='q3' style="display:none;">
+    External Resource Input
+    <input type='button' value='YES' />
+    <input type='button' value='NO' />
+  </div>  
+
+  <div id='q4' style="display:none;" >
+    Scope
+    All Customers
+    All Staff
+    
+  </div>  
+
+  <div id='q5' style="display:none;">
+
+  </div>
+
+
+
+
+
+</body>
+</html>
