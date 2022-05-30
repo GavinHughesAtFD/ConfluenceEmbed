@@ -8,7 +8,7 @@
   <div id='q1'>
     Is this change/introduction to DEV only?
     <input type='button' value='YES' />
-    <input type='button' value='NO' onclick="document.getElementById('q2').style.display='block';document.getElementById('q1').style.display='none'"/>
+    <input type='button' value='NO' onclick="document.getElementById('q2').style.display='block';document.getElementById('q1').style.display='none';document.getElementById('counter').innerHtml=document.getElementById('counter').innerHtml+1;"/>
   </div>
   
   <div id='q2' style="display:none;">
